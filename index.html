@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Interactive map of nigerai</title>
+	<link rel="stylesheet" type="text/css" href="states/lib/custom.min.css">
+		<meta name="DC.title" content="Interactive Map of Nigeria">
+	<meta name="keyword" content="Interactive Map of Nigeria, INIGMap, Map, Nigerian Map, Interactive Map, Map library js, js map library, Nigeria map js libraray">
+	<meta name="description" content="display all states on Nigerian Map which on hover shows some specify info about the location">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<script type="text/javascript" src="states/lib/nigeria-min.js"></script>	
+	<script type="text/javascript" src="states/lib/jquery.js"></script>	
+	<script type="text/javascript" src="states/lib/map.js"></script>
+</head>
+<body style="margin:0px; padding:0px;">	
+<style>
+	.stateI{
+		border-radius: 7px;
+		border:1px solid #2c6;
+		font-size:2em;padding:3px 7px;background:#2c6;color:white;margin:5px auto 0px auto;width:300px;
+	}
+	.stateI:hover{
+		border:1px solid #2c6;
+		background-color: white;
+		color:#2c6;
+	}
+	
+
+</style>
+
+	<div class="header-bar">
+		<div class="dropContainer">		
+			<input type="text" id="SearchBox" class="dropBtn" placeholder="Search State">
+			<!-- <button class=" button-37" role="button">Nigeria</button> -->
+			<div style="position: relative;">
+				<div class="dropDownx">
+					<ul>			
+					</ul>
+				</div>
+			</div>
+		</div>
+		<h1>
+			RESEARCH RESULT OF CLIMATE CHANGE IN NIGERIA
+		</h1>
+		<div style="width: 300px;">
+			description
+		</div>
+	</div>
+	<script src="./states/lib/drop.js"></script>
+	<center>
+			<div id="containerId" style="display: inline-block;">
+
+			</div>  
+			<div style="display: inline-block;position: relative;top: -72px;">
+				<div class="d-flex">
+					<div class="box1 box"></div>Excellent
+				</div>
+				<div class="d-flex">
+					<div class="box2 box"></div>Good
+				</div>
+				<div class="d-flex">
+					<div class="box3 box"></div>Poor
+				</div>
+				
+			</div>
+		</center>	
+</div>
+
+<script>
+	NiMap('containerId',
+		{config:[
+			{
+				state:1,
+				hover: "<div>3</div>",
+				url: "./abia.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:2,
+				hover: "<div>3</div>",
+				url: "adamawa.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:3,
+				hover: "<div>3</div>",
+				url: "akwa-ibom.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:4,
+				hover: "<div>3</div>",
+				url: "./anambara.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:5,
+				hover: "<div>3</div>",
+				url: "bauchi.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:6,
+				hover: "<div>3</div>",
+				url: "bayelsa.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:7,
+				hover: "<div>3</div>",
+				url: "./benue.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:8,
+				hover: "<div>3</div>",
+				url: "bornu.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:9,
+				hover: "<div>3</div>",
+				url: "calabar.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:10,
+				hover: "<div>3</div>",
+				url: "./delta.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:11,
+				hover: "<div>3</div>",
+				url: "ebonyi.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:12,
+				hover: "<div>3</div>",
+				url: "edo.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:13,
+				hover: "<div>3</div>",
+				url: "./ekiti.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:14,
+				hover: "<div>3</div>",
+				url: "enugu.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:15,
+				hover: "<div>3</div>",
+				url: "gombe.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:16,
+				hover: "<div>3</div>",
+				url: "./imo.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:17,
+				hover: "<div>3</div>",
+				url: "jigawa.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:18,
+				hover: "<div>3</div>",
+				url: "kaduna.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:19,
+				hover: "<div>3</div>",
+				url: "./kano.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:20,
+				hover: "<div>3</div>",
+				url: "katsina.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:21,
+				hover: "<div>3</div>",
+				url: "kebi.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:22,
+				hover: "<div>3</div>",
+				url: "./kogi.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:23,
+				hover: "<div>3</div>",
+				url: "kwara.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:24,
+				hover: "<div>3</div>",
+				url: "lagos.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:25,
+				hover: "<div>3</div>",
+				url: "./nasarawa.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:26,
+				hover: "<div>3</div>",
+				url: "niger.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:27,
+				hover: "<div>3</div>",
+				url: "ogun.html",
+				target: "same_window",
+				upColor: "#13aa52",
+				overColor: "#13aa52",
+				downColor: "#13aa52", 
+			},
+			{
+				state:28,
+				hover: "<div>3</div>",
+				url: "./ondo.html",
+				target: "same_window",
+				upColor: "firebrick",
+				overColor: "firebrick",
+				downColor: "firebrick", 
+			},
+			{
+				state:29,
+				hover: "<div>3</div>",
+				url: "osun.html",
+				target: "same_window",
+				upColor: "firebrick",
+				overColor: "firebrick",
+				downColor: "firebrick", 
+			},
+			{
+				state:30,
+				hover: "<div>3</div>",
+				url: "oyo.html",
+				target: "same_window",
+				upColor: "firebrick",
+				overColor: "firebrick",
+				downColor: "firebrick",  
+			},
+			{
+				state:31,
+				hover: "<div>3</div>",
+				url: "./plateau.html",
+				target: "same_window",
+				upColor: "firebrick",
+				overColor: "firebrick",
+				downColor: "firebrick",  
+			},
+			{
+				state:32,
+				hover: "<div>3</div>",
+				url: "river.html",
+				target: "same_window",
+				upColor: "firebrick",
+				overColor: "firebrick",
+				downColor: "firebrick", 
+			},
+			{
+				state:33,
+				hover: "<div>3</div>",
+				url: "sokoto.html",
+				target: "same_window",
+				upColor: "skyblue",
+				overColor: "skyblue",
+				downColor: "skyblue",  
+			},
+			{
+				state:34,
+				hover: "<div>3</div>",
+				url: "./taraba.html",
+				target: "same_window",
+				upColor: "skyblue",
+				overColor: "skyblue",
+				downColor: "skyblue", 
+			},
+			{
+				state:35,
+				hover: "<div>3</div>",
+				url: "yobe.html",
+				target: "same_window",
+				upColor: "skyblue",
+				overColor: "skyblue",
+				downColor: "skyblue", 
+			},
+			{
+				state:36,
+				hover: "<div>3</div>",
+				url: "zamfara.html",
+				target: "same_window",
+				upColor: "skyblue",
+				overColor: "skyblue",
+				downColor: "skyblue", 
+			}
+			,
+			{
+				state:37,
+				hover: "<div>3</div>",
+				url: "abuja.html",
+				target: "same_window",
+				upColor: "skyblue",
+				overColor: "skyblue",
+				downColor: "skyblue", 
+			}
+		]
+	}
+	);
+</script> 
+	<!-- <a class="stateI" href="abia.html" style="display: block;">abia</a>	
+	<a class="stateI" href="abuja.html" style="display: block;">abuja</a>	
+	<a class="stateI" href="adamawa.html" style="display: block;">adamawa</a>	
+	<a class="stateI" href="akwa-ibom.html" style="display: block;">		akwaIbom</a>	
+	<a class="stateI" href="anambara.html" style="display: block;">anambara</a>	
+	<a class="stateI" href="bauchi.html" style="display: block;">bauchi</a>	
+	<a class="stateI" href="bayelsa.html" style="display: block;">bayelsa</a>	
+	<a class="stateI" href="benue.html" style="display: block;">benue</a>	
+	<a class="stateI" href="bornu.html" style="display: block;">borno</a>	
+	<a class="stateI" href="calabar.html" style="display: block;">calabar</a>	
+	<a class="stateI" href="delta.html" style="display: block;">delta</a>	
+	<a class="stateI" href="eboyin.html" style="display: block;">eboyin</a>	
+	<a class="stateI" href="edo.html" style="display: block;">edo</a>	
+	<a class="stateI" href="enugu.html" style="display: block;">enugu</a>	
+	<a class="stateI" href="ekiti.html" style="display: block;">ekiti</a>	
+	<a class="stateI" href="gombe.html" style="display: block;">gombe</a>	
+	<a class="stateI" href="imo.html" style="display: block;">imo</a>	
+	<a class="stateI" href="jigawa.html" style="display: block;">jigawa</a>	
+	<a class="stateI" href="kaduna.html" style="display: block;">kaduna</a>	
+	<a class="stateI" href="kano.html" style="display: block;">kano</a>		
+	<a class="stateI" href="katsina.html" style="display: block;">katsina</a>	
+	<a class="stateI" href="kebbi.html" style="display: block;">kebbi</a>	
+	<a class="stateI" href="kogi.html" style="display: block;">kogi</a>	
+	<a class="stateI" href="kwara.html" style="display: block;">kwara</a>	
+	<a class="stateI" href="lagos.html" style="display: block;">Lagos</a>	
+	<a class="stateI" href="nasarawa.html" style="display: block;">nasarawa</a>	
+	<a class="stateI" href="niger.html" style="display: block;">niger</a>	
+	<a class="stateI" href="ogun.html" style="display: block;">ogun</a>	
+	<a class="stateI" href="ondo.html" style="display: block;">ondo</a>	
+	<a class="stateI" href="osun.html" style="display: block;">osun</a>	
+	<a class="stateI" href="oyo.html" style="display: block;">oyo</a>	
+	<a class="stateI" href="plateau.html" style="display: block;">Plateau</a>	
+	<a class="stateI" href="river.html" style="display: block;">river</a>	
+	<a class="stateI" href="sokoto.html" style="display: block;">sokoto</a>
+	<a class="stateI" href="taraba.html" style="display: block;">taraba</a>
+	<a class="stateI" href="yobe.html" style="display: block;">yobe</a>
+	<a class="stateI" href="zamfara.html" style="display: block;">zamfara</a>	 -->
+</body>
+</html>
