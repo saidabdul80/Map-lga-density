@@ -57,6 +57,9 @@ $(document).ready(function () {
     niger.CalMap(generatedProperties);
 })
 ```
+## Demo
+
+Check out the [live demo here](https://saidabdul80.github.io/Map-lga-density/niger.html) to see the MakeMap class in action.
 
 ## Notes
 
